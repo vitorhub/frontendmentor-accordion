@@ -1,0 +1,133 @@
+body{
+    background-color: #9166E9;
+}
+.container{
+    display: flex;
+    width: 950px; height: 525px;
+    background-color: #fff;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+.mulher{
+    margin: auto 0 auto -280px;
+    overflow: hidden;
+    z-index: 0;
+}
+.box{
+    margin: 200px 0 0 -120px;
+    z-index: 5;
+}
+.secao-faq h1:nth-child(1){
+    font-weight: 700;
+    margin: 40px auto 20px auto;
+    font-size: 3rem;
+}
+
+.linha-pergunta{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin: 10px auto;
+}
+.box, .mulher{
+    align-self: flex-start;
+}
+.pergunta:hover{
+    cursor: pointer;
+    color: #C48B7A;
+}
+.secao-faq{
+    width: 350px;
+    margin-right: 110px;
+}
+.seta{
+    align-self: flex-start;
+    margin: auto 0;
+    transform: rotate(180deg);
+}
+.gira-seta{
+    transform: rotate(0deg);
+}
+.negrito{
+    font-weight: bolder;
+}
+.resposta{
+    height: 0;
+    overflow: hidden;
+    max-width: 350px;
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+.mostrar{
+    height: auto;
+    transition: height 2s;
+    max-width: 350px;
+    transition: 1s ease-out;
+}
+@media( max-width: 375px){
+    .container{
+        flex-direction: column;
+        width: 270px; height: 445px;
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        margin: auto;
+        border-radius: 20px;
+        justify-content: center;
+    }
+    .mulher{
+        margin: -450px auto 0 auto;
+        left: 0; right: 0;
+        overflow: visible;
+        width: 200px;
+        position: absolute;
+    }
+    .box{
+        margin: -440px 0 0 0px;
+        z-index: 5;
+        width: 100px;
+        position: absolute;
+    }
+    .secao-faq{
+        width: 270px;
+        margin: auto;
+    }
+    .secao-faq h1:nth-child(1){
+        font-weight: 700;
+        margin: 25% auto 20px auto;
+        font-size: 1.5rem;
+        position: relative;
+        text-align: center;
+        width: 270px;
+    }
+
+    .linha-pergunta{
+        display: flex;
+        justify-content: space-between;
+        width: 220px;
+        margin: 5px auto;
+        font-size: .7rem;
+    }
+
+    .pergunta:hover{
+        cursor: pointer;
+        color: #C48B7A;
+    }
+    
+     .resposta{
+        height: 0;
+        overflow: hidden;
+        max-width: 220px;
+        font-weight: 400;
+        font-size: .7rem;
+        margin: 0 auto;
+    }
+    .mostrar{
+        height: auto;
+        transition: height 2s;
+        max-width: 220px;
+        transition: 1s ease-out;
+    }
+}
